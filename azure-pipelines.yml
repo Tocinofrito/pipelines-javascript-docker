@@ -36,6 +36,8 @@ stages:
     - publish: manifests
       artifact: manifests
 
+# ... (definición anterior)
+
 - stage: Deploy
   displayName: Deploy stage
   dependsOn: Build

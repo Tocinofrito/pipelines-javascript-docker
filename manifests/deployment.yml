@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: tocinofritopipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tocinofritopipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: tocinofritopipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: tocinofritopipelinesjavascriptdocker 
+          image: containerexampleism2304.azurecr.io/tocinofritopipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
